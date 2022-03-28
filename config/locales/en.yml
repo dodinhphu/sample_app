@@ -42,3 +42,9 @@ en:
     signup: "Sign Up"
     name_page: "Sign Up Page"
     text: "This will be a signup page for new users."
+    sigup: "Sign Up"
+    name_page: "Sign Up Page"
+    text: "This will be a signup page for new users."
+  errors:
+    err: "error"
+    text_1: "The form contains"

@@ -1,5 +1,9 @@
-<% provide :title, t("signup_page.signup") %>
+<% provide :title, t("signup_page.sigup") %>
 <div class="mt-5 mb-5">
-  <h1><%= t "signup_page.name_page" %></h1>
-  <p><%= t "signup_page.text" %></p>
+  <h1><%= t("signup_page.name_page") %></h1>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 tong-form">
+      <%= render "form" %>
+    </div>
+  </div>
 </div>
