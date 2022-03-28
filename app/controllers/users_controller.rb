@@ -1,10 +1,31 @@
 class UsersController < ApplicationController
+<<<<<<< HEAD
   before_action :load_user, except: %i(index new create)
   before_action :logged_in_user, except: %i(new show create)
   before_action :correct_user, only: %i(edit update)
 
   def show
     @pagy, @microposts = pagy @user.microposts
+=======
+  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :load_user, only: [:show, :edit, :update, :destroy]
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t "users.text_5"
+    else
+      flash[:danger] = t "users.text_6"
+    end
+    redirect_to users_url
+  end
+
+  def index
+   @pagy, @users = pagy(User.all)
+  end
+
+  def new; end
+  def show
+>>>>>>> chapter-10
     redirect_to root_path if check? @user
   end
 
@@ -31,15 +52,23 @@ class UsersController < ApplicationController
   def edit; end
 
   def update
+<<<<<<< HEAD
     if @user.update user_params
       flash[:success] = t "users.tb_update_successfully"
       redirect_to @user
     else
       flash[:danger] = t "users.update_fail"
+=======
+    if @user.update(user_params)
+      flash[:success] = t "users.tb_update_successfully"
+      redirect_to @user
+    else
+>>>>>>> chapter-10
       render :edit, status: :unprocessable_entity
     end
   end
 
+<<<<<<< HEAD
   def destroy
     if @user.destroy
       flash[:success] = t ".delete_success"
@@ -49,6 +78,8 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+=======
+>>>>>>> chapter-10
   private
   def check? user
     user == nil
@@ -59,6 +90,7 @@ class UsersController < ApplicationController
   end
 
   def logged_in_user
+<<<<<<< HEAD
     return if logged_in?
 
     store_location
@@ -67,13 +99,28 @@ class UsersController < ApplicationController
   end
 
   def correct_user
+=======
+    unless logged_in?
+      store_location
+      flash[:danger] = t "users.alert"
+      redirect_to login_url
+    end
+  end
+
+  def correct_user
+    @user = User.find_by(id: params[:id])
+>>>>>>> chapter-10
     redirect_to(root_url) unless current_user?(@user)
   end
 
   def load_user
     @user = User.find_by(id: params[:id])
+<<<<<<< HEAD
     return if @user
 
+=======
+    return @user if @user
+>>>>>>> chapter-10
     flash[:danger] = t "users.notuser"
     redirect_to root_path
   end
