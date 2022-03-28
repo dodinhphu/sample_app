@@ -13,7 +13,9 @@ class User < ApplicationRecord
                     uniqueness: {case_sensitive: false}
 
   validates :password, presence: true,
-                       length: {minimum: Settings.type_validate.min_length_password}, if: :password
+                       length: {minimum: Settings.type_validate.min_length_password}, allow_nil: true, if: :password
+
+  scope :ordered_by_name, ->{order name: :asc}
   has_secure_password
 
   class << self

@@ -10,3 +10,7 @@ type_validate:
   min_length_email: 20
   max_length_email: 255
   min_length_password: 6
+
+size_img:
+  size_80: 80
+  size_50: 50

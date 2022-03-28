@@ -11,7 +11,7 @@
         </li>
         <% if logged_in? %>
           <li class="nav-item">
-            <%= link_to t("users.users"), "#", {class: "nav-link"} %>
+            <%= link_to t("users.users"), users_path, {class: "nav-link"} %>
           </li>
           <li class="nav-item dropdown">
             <%= link_to t("users.account"), "#", {class: "nav-link dropdown-toggle", id: "navbarDropdown", role: "button", "data-bs-toggle": "dropdown", "aria-expanded": "false"} %>
@@ -20,7 +20,7 @@
                 <%= link_to t("users.profile"), current_user, {class: "dropdown-item"} %>
               </li>
               <li>
-                <%= link_to t("users.setting"), "#", {class: "dropdown-item"} %>
+                <%= link_to t("users.setting"), edit_user_path(current_user), {class: "dropdown-item"} %>
               </li>
               <li class="divider">
                 <hr class="dropdown-divider">

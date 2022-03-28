@@ -62,12 +62,28 @@ vi:
     tb_successfully: "Đăng Nhập Thành Công"
 
   users:
+    destroy:
+      delete_success: "Xóa Thành Công Người Dùng"
+      delete_fail: "Xóa Thất Bại !"
     account: "Tài Khoản"
     users: "Người Dùng"
     profile: "Hồ Sơ"
     setting: "Cài Đặt"
     logout: "Đăng Xuất"
     tb_successfully: "Chào Mừng Bạn Đến Với Sample App!"
-
+    title_update: "Đỗi Mật Khẩu"
+    btn_create: "Taọ Tài Khoản"
+    btn_update: "Lưu Thay Đỗi"
+    tb_update_successfully: "Cập Nhật Tài Khoản Thành Công"
+    alert: "Làm Ơn Đăng Nhập."
+    allUser: "Tất Cả Người Dùng"
+    text_3: "Update your profile"
+    delete: "Xóa"
+    text_4: "Bạn chắc chắn??"
+    notuser: "Không Tìm Thấy Người Dùng"
+    update_fail: "Cập Nhật Người Dùng Không Thành Công"
+    create_fail: "Tạo Người Dùng Không Thành Công"
+  edit:
+    btn_edit: "Thay Đỗi"
   sessions:
     text_1: "Nhớ thông tin đăng nhập của tôi trên máy tính này"
