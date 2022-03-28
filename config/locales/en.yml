@@ -49,16 +49,13 @@ en:
     sigup: "Sign Up"
     name_page: "Sign Up Page"
     text: "This will be a signup page for new users."
+
   errors:
     err: "error"
     text_1: "The form contains"
     sigup: "Sign Up"
     name_page: "Sign Up Page"
     text: "This will be a signup page for new users."
-
-  errors:
-    err: "error"
-    text_1: "The form contains"
 
   login:
     log_in: "Login"
@@ -89,7 +86,8 @@ en:
     you_sure: "You sure?"
     notuser: "User not found"
     update_fail: "User Update Failed"
-
+    followers:
+      title: "Follower List"
 
   edit:
     btn_edit: "change"
@@ -153,3 +151,8 @@ en:
   micropost: "micropost"
   micropost_feed: "Micropost Feed"
   delete: "Delete"
+  following: "following"
+  followers: "followers"
+  view_my_profile: "view my profile"
+  follow: "Follow"
+  Unfollow: "Unfollow"
