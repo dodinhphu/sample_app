@@ -1,11 +1,13 @@
 vi:
   title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+
   layouts:
     header:
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng Nhập"
       sampleapp: "Sample App"
+      hi: "Hello"
     footer:
       contact: "Liên hệ với chúng tôi"
       about: "Về Chúng Tôi"
@@ -65,6 +67,9 @@ vi:
     destroy:
       delete_success: "Xóa Thành Công Người Dùng"
       delete_fail: "Xóa Thất Bại !"
+    create:
+      tb_successfully: "Chào mừng bạn đến với Ứng dụng mẫu!"
+      create_fail: "Tạo Mới Người Dùng Thất Bại"
     account: "Tài Khoản"
     users: "Người Dùng"
     profile: "Hồ Sơ"
@@ -83,7 +88,25 @@ vi:
     notuser: "Không Tìm Thấy Người Dùng"
     update_fail: "Cập Nhật Người Dùng Không Thành Công"
     create_fail: "Tạo Người Dùng Không Thành Công"
+
   edit:
     btn_edit: "Thay Đỗi"
+    text_5: "Xóa Thành Công Người Dùng"
+    text_6: "Xóa Thất Bại !"
+    notuser: "Không Tìm Thấy Người Dùng"
+    check_mail: "Hãy Kiểm tra mail của bạn để kích hoạt tài khoản"
+    activate: "Kích Hoạt"
+
   sessions:
+    create:
+      check_mail: "Hãy Kiểm Tra Mail Và Kích Hoạt Tài Khoản Của Bạn"
     text_1: "Nhớ thông tin đăng nhập của tôi trên máy tính này"
+
+  sendMail:
+    chao: "Chào, {name}"
+    text1: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+    subject: "Kích hoạt tài khoản"
+    alert1: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
+    alert2: "Liên kết kích hoạt không hợp lệ"
+    title: "Sample App"
+    link: "Kích Hoạt"

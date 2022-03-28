@@ -2,6 +2,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.0.2"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
+gem "figaro"
 gem "bcrypt", "3.1.13"
 gem "faker", "2.1.2"
 gem "pagy"

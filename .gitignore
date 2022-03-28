@@ -101,3 +101,6 @@ config/environments/*.local.yml
 /node_modules
 .framgia-ci-reports/
 .framgia-ci-result.temp.yml
+
+# Ignore application configuration
+/config/application.yml

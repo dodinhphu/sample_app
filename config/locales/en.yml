@@ -1,11 +1,13 @@
 en:
   title: "Ruby on Rails Tutorial Sample App"
+
   layouts:
     header:
       home: "Home"
       help: "Help"
       login: "Login"
       sampleapp: "Sample App"
+      hi: "Hello"
 
     footer:
       contact: "Contact"
@@ -88,6 +90,22 @@ en:
 
   edit:
     btn_edit: "change"
+    text_5: "User deleted"
+    text_6: "Delete fail!"
+    notuser: "User not found"
+    check_mail: "Please check your mail to active account"
+    activate: "activate"
 
   sessions:
+    create:
+      check_mail: "Please Check Your Mail And Activate Your Account"
     text_1: "Remember me on this computer"
+
+  sendMail:
+    chao: "Hi, {name}"
+    text1: "Welcome to the Sample App! Click on the link below to activate your account:"
+    subject: "Account activation"
+    alert1: "Please check your email to activate your account."
+    alert2: "Invalid activation link"
+    title: "Sample App"
+    link: "activate"
