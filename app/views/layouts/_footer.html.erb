@@ -1,0 +1,13 @@
+<footer class="footer">
+  <small>
+    The <%= link_to t("layouts.footer.link_rails"), Settings.link.rails %>
+    by <%= link_to t ("layouts.footer.link_tg"), Settings.link.michael %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("layouts.footer.about"), about_path %></li>
+      <li><%= link_to t("layouts.footer.contact"), contact_path %></li>
+      <li><%= link_to t("layouts.footer.news"), Settings.link.rails %></li>
+    </ul>
+  </nav>
+</footer>
