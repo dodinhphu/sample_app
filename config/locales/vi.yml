@@ -1,6 +1,5 @@
 vi:
   title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
-
   layouts:
     header:
       home: "Trang chủ"
@@ -69,3 +68,6 @@ vi:
     setting: "Cài Đặt"
     logout: "Đăng Xuất"
     tb_successfully: "Chào Mừng Bạn Đến Với Sample App!"
+
+  sessions:
+    text_1: "Nhớ thông tin đăng nhập của tôi trên máy tính này"

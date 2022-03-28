@@ -5,8 +5,8 @@ class SessionsController < ApplicationController
     user = User.find_by email: params[:session][:email].downcase
     if user&.authenticate params[:session][:password]
       log_in user
-      flash[:success] = t "login.tb_successfully"
-      redirect_to root_path
+      params[:session][:remember_me] == '1' ? remember(user) : forget(user)
+      redirect_to user
     else
       flash.now[:danger] = t "login.invalid"
       render :new, status: :unprocessable_entity

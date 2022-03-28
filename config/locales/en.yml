@@ -1,6 +1,5 @@
 en:
   title: "Ruby on Rails Tutorial Sample App"
-
   layouts:
     header:
       home: "Home"
@@ -69,3 +68,6 @@ en:
     setting: "Settings"
     logout: "Log Out"
     tb_successfully: "Welcome to the Sample App!"
+
+  sessions:
+    text_1: "Remember me on this computer"
