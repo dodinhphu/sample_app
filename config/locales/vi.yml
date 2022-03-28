@@ -1,5 +1,6 @@
 vi:
   title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+
   layouts:
     header:
       home: "Trang chủ"
@@ -12,6 +13,7 @@ vi:
       news: "Tin Tức"
       link_rails: "Ruby on Rails Tutorial"
       link_tg: "Michael Hartl"
+      text_1: "The %{link} by %{tg}"
 
   contact_page:
     contact: "Liên Hệ"
@@ -37,6 +39,6 @@ vi:
     course_name: "Hướng dẫn sử dụng Ruby on Rails"
 
   signup_page:
-    sigup: "Đăng Ký"
+    signup: "Đăng Ký"
     name_page: "Trang Đăng Ký"
     text: "Đây sẽ là trang đăng ký cho người dùng mới."
