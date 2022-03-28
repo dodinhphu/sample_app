@@ -75,6 +75,7 @@ en:
     profile: "Profile"
     setting: "Settings"
     logout: "Log Out"
+    tb_successfully: "Welcome to the Sample App!"
     title_update: "Edit user"
     btn_create: "Create my account"
     btn_update: "Save changes"
