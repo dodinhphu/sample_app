@@ -1,6 +1,8 @@
 en:
   title: "Ruby on Rails Tutorial Sample App"
 
+  please_login: "Please log in."
+
   layouts:
     header:
       home: "Home"
@@ -35,9 +37,9 @@ en:
     home: "Home"
     name_page: "Home Page"
     chao: "Welcome to the Sample App"
-    text_1: "This is the homepage for the "
-    text_2: "sample application. "
-    text_3: "Sign up now !"
+    this_homepage: "This is the homepage for the "
+    sampleapp: "sample application. "
+    sign_up_now: "Sign up now !"
     course_name: "Ruby on Rails Tutorial "
 
   signup_page:
@@ -75,6 +77,7 @@ en:
     profile: "Profile"
     setting: "Settings"
     logout: "Log Out"
+    tb_successfully: "Welcome to the Sample App!"
     title_update: "Edit user"
     btn_create: "Create my account"
     btn_update: "Save changes"
@@ -83,7 +86,7 @@ en:
     allUser: "All users"
     text_3: "Update your profile"
     delete: "Delete"
-    text_4: "You sure?"
+    you_sure: "You sure?"
     notuser: "User not found"
     update_fail: "User Update Failed"
 
@@ -130,3 +133,23 @@ en:
     password: "Passworda"
     confirmation: "confirmation"
     user_not_found: "User Not Found"
+
+  microposts:
+    create:
+      create_success: "Micropost created!"
+    destroy:
+      delete_success: "Micropost deleted"
+      delete_fail: "Deleted fail"
+    micropost_invalid: "Micropost invalid"
+    valid_image_format: "must be a valid image format"
+    less_than_5m: "should be less than 5MB"
+    new_micropost: "Compose new micropost..."
+    post: "Post"
+    posted: "Posted"
+    ago: "ago."
+
+  the_form_contains: "The form contains"
+  view_my_profile: "view my profile"
+  micropost: "micropost"
+  micropost_feed: "Micropost Feed"
+  delete: "Delete"

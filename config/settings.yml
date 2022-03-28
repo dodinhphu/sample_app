@@ -17,3 +17,8 @@ size_img:
 
 time_token:
   two_h: 2
+
+size_in_megabytes: 5
+resize_to_limit: [500, 500]
+max_length_content: 140
+img_type: [image/jpeg image/gif image/png]

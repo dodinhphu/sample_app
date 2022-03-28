@@ -1,6 +1,8 @@
 vi:
   title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
 
+  please_login: "Hãy Đăng Nhập."
+
   layouts:
     header:
       home: "Trang chủ"
@@ -34,9 +36,9 @@ vi:
     home: "Trang Chủ"
     name_page: "Trang Chủ"
     chao: "Chào mừng bạn đến với Sample App"
-    text_1: "Đây là trang chủ cho "
-    text_2: "ứng dụng mẫu. "
-    text_3: "Đăng ký ngay !"
+    this_homepage: "Đây là trang chủ cho "
+    sampleapp: "ứng dụng mẫu. "
+    sign_up_now: "Đăng ký ngay !"
     course_name: "Hướng dẫn sử dụng Ruby on Rails"
 
   signup_page:
@@ -84,7 +86,7 @@ vi:
     allUser: "Tất Cả Người Dùng"
     text_3: "Update your profile"
     delete: "Xóa"
-    text_4: "Bạn chắc chắn??"
+    you_sure: "Bạn chắc chắn??"
     notuser: "Không Tìm Thấy Người Dùng"
     update_fail: "Cập Nhật Người Dùng Không Thành Công"
     create_fail: "Tạo Người Dùng Không Thành Công"
@@ -131,3 +133,23 @@ vi:
     password: "Mật Khẩu"
     confirmation: "Xác Nhận Mật Khẩu"
     user_not_found: "Không Tìm Thấy Người Dùng"
+
+  microposts:
+    create:
+      create_success: "Đã tạo micropost!"
+    destroy:
+      delete_success: "Micropost đã bị xóa"
+      delete_fail: "Đã xóa không thành công"
+    micropost_invalid: "Micropost không hợp lệ"
+    valid_image_format: "phải là một định dạng hình ảnh hợp lệ"
+    less_than_5m: "phải nhỏ hơn 5MB"
+    new_micropost: "Soạn micropost mới ..."
+    post: "Đăng tải"
+    posted: "Đã đăng"
+    ago: "trước kia."
+
+  the_form_contains: "Biểu mẫu chứa"
+  view_my_profile: "xem hồ sơ của tôi"
+  micropost: "micropost"
+  micropost_feed: "Micropost Feed"
+  delete: "xóa"
