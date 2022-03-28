@@ -99,7 +99,10 @@ en:
   sessions:
     create:
       check_mail: "Please Check Your Mail And Activate Your Account"
-    text_1: "Remember me on this computer"
+    text_save_login: "Remember me on this computer"
+    password: "password"
+    new_user: "New User?"
+    sign_up_now: "Sign Up Now!"
 
   sendMail:
     chao: "Hi, {name}"
@@ -109,3 +112,21 @@ en:
     alert2: "Invalid activation link"
     title: "Sample App"
     link: "activate"
+
+  forgot_password:
+    title: "Forgot Password"
+    text_huong_dan: "To reset your password click the link below:"
+    text_lk_het_hang: "This link will expire in two hours."
+    text_tb_mk_nhu_cu: " If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    btn_forgotPassword: "Update password"
+    alert_tc: "Email sent with password reset instructions"
+    alert_tb: "Email address not found"
+    alert_not_empty: "can't be empty"
+    alert_reset_password: "Password has been reset."
+    alert_expired_token: "Password reset has expired."
+    submit: "Submit"
+    reset: "Password reset"
+    (title): "(forgot password)"
+    password: "Passworda"
+    confirmation: "confirmation"
+    user_not_found: "User Not Found"

@@ -1,0 +1,17 @@
+<% provide :title, t("forgot_password.title") %>
+<div class="mt-5 mb-5">
+  <h1><%= t "forgot_password.title" %></h1>
+  <div class="row">
+    <div class="tong-form col-md-6 col-md-offset-3">
+      <%= form_for(@user, url: password_reset_path(params[:id])) do |f| %>
+        <%= render "shared/error_messages" %>
+        <%= hidden_field_tag :email, @user.email %>
+        <%= f.label :password, t("forgot_password.password") %>
+        <%= f.password_field :password, class: "form-control" %>
+        <%= f.label :password_confirmation, t("forgot_password.confirmation") %>
+        <%= f.password_field :password_confirmation, class: "form-control" %>
+        <%= f.submit t("forgot_password.btn_forgotPassword"), class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<% provide :title, t("forgot_password.title") %>
+<div class="mt-5 mb-5">
+  <h1><%= t "forgot_password.title" %></h1>
+  <div class="row">
+    <div class="tong-form col-md-6 col-md-offset-3">
+      <%= form_for :password_reset, url: password_resets_path do |f| %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: "form-control" %>
+        <%= f.submit t("forgot_password.submit"), class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

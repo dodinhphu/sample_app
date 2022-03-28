@@ -14,3 +14,6 @@ type_validate:
 size_img:
   size_80: 80
   size_50: 50
+
+time_token:
+  two_h: 2
