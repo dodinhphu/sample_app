@@ -49,3 +49,23 @@ vi:
   errors:
     err: "Lỗi"
     text_1: "Biểu mẩu chứa"
+    sigup: "Đăng Ký"
+    name_page: "Trang Đăng Ký"
+    text: "Đây sẽ là trang đăng ký cho người dùng mới."
+
+  errors:
+    err: "Lỗi"
+    text_1: "Biểu mẩu chứa"
+
+  login:
+    log_in: "Đăng Nhập"
+    invalid: "Email hoặc Mật Khẩu không chính xác"
+    tb_successfully: "Đăng Nhập Thành Công"
+
+  users:
+    account: "Tài Khoản"
+    users: "Người Dùng"
+    profile: "Hồ Sơ"
+    setting: "Cài Đặt"
+    logout: "Đăng Xuất"
+    tb_successfully: "Chào Mừng Bạn Đến Với Sample App!"
