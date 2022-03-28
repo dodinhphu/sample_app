@@ -109,3 +109,18 @@ en:
     alert2: "Invalid activation link"
     title: "Sample App"
     link: "activate"
+
+  forgotPassword:
+    title: "Forgot Password"
+    text1: "To reset your password click the link below:"
+    text2: "This link will expire in two hours."
+    text3: " If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    btn_forgotPassword: "Update password"
+    alert_tc: "Email sent with password reset instructions"
+    alert_tb: "Email address not found"
+    alert_1: "can't be empty"
+    alert_2: "Password has been reset."
+    alert_3: "Password reset has expired."
+    submit: "Submit"
+    reset: "Password reset"
+    titlen: "(forgot password)"
