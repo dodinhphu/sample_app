@@ -1,0 +1,11 @@
+<% provide :title, t("home_page.home") %>
+<div class="center jumbotron mt-5 mb-5">
+  <h1><%= t "home_page.chao" %></h1>
+  <h2>
+    <%= t "home_page.text_1" %>
+    <%= link_to t("home_page.course_name"), Settings.link.rails %>
+    <%= t "home_page.text_2" %>
+  </h2>
+  <%= link_to t("home_page.text_3"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails logo", width: "200px"), Settings.link.rails %>

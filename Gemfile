@@ -5,7 +5,15 @@ ruby "3.0.2"
 
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 
+gem "rails-i18n"
+
+gem "config"
+
 gem "sprockets-rails"
+
+gem "jsbundling-rails"
+
+gem "cssbundling-rails"
 
 gem "mysql2", "~> 0.5"
 
@@ -35,4 +43,10 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+end
+
+group :development, :test do
+  gem "rubocop", "~> 0.74.0", require: false
+  gem "rubocop-checkstyle_formatter", require: false
+  gem "rubocop-rails", "~> 2.3.2", require: false
 end

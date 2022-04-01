@@ -1,0 +1,42 @@
+vi:
+  title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng Nhập"
+      sampleapp: "Sample App"
+    footer:
+      contact: "Liên hệ với chúng tôi"
+      about: "Về Chúng Tôi"
+      news: "Tin Tức"
+      link_rails: "Ruby on Rails Tutorial"
+      link_tg: "Michael Hartl"
+
+  contact_page:
+    contact: "Liên Hệ"
+    contact_page: "Trang Liên Hệ"
+    course: "Khóa Học Ruby On Rails"
+    text: "Hướng Dẩn về Ruby On Rails từ ứng dụng mẩu tại"
+
+  help_page:
+    help: "Trợ Giúp"
+    name_page: "Trang Trợ Giúp"
+    name: "Trang trợ giúp Hướng dẫn về Rails"
+    text_1: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại "
+    text_2: ". Để nhận trợ giúp về ứng dụng mẫu này, hãy xem "
+    book_name: "Sách hướng dẫn về Ruby on Rails."
+
+  home_page:
+    home: "Trang Chủ"
+    name_page: "Trang Chủ"
+    chao: "Chào mừng bạn đến với Sample App"
+    text_1: "Đây là trang chủ cho "
+    text_2: "ứng dụng mẫu. "
+    text_3: "Đăng ký ngay !"
+    course_name: "Hướng dẫn sử dụng Ruby on Rails"
+
+  signup_page:
+    sigup: "Đăng Ký"
+    name_page: "Trang Đăng Ký"
+    text: "Đây sẽ là trang đăng ký cho người dùng mới."
