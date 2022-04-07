@@ -1,3 +1,12 @@
 link:
   rails: 'https://www.railstutorial.org/'
   michael: 'https://www.michaelhartl.com/'
+
+format:
+  email: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+
+type_validate:
+  max_length_name: 10
+  min_length_email: 20
+  max_length_email: 255
+  min_length_password: 6

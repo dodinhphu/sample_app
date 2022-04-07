@@ -1,5 +1,6 @@
 en:
   title: "Ruby on Rails Tutorial Sample App"
+
   layouts:
     header:
       home: "Home"
@@ -12,11 +13,14 @@ en:
       news: "News"
       link_rails: "Ruby on Rails Tutorial"
       link_tg: "Michael Hartl"
+      text_1: "The %{link} by %{tg}"
+
   contact_page:
     contact: "Contact"
     contact_page: "Contact Page"
     course: "Ruby On Rails Tutorial"
     text: "Contact the Ruby on Rails Tutorial about the sample app at the"
+
   help_page:
     help: "Help"
     name_page: "Help Page"
@@ -35,6 +39,6 @@ en:
     course_name: "Ruby on Rails Tutorial "
 
   signup_page:
-    sigup: "Sign Up"
+    signup: "Sign Up"
     name_page: "Sign Up Page"
     text: "This will be a signup page for new users."

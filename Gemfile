@@ -5,6 +5,8 @@ ruby "3.0.2"
 
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 
+gem "bcrypt", "3.1.13"
+
 gem "rails-i18n"
 
 gem "config"
