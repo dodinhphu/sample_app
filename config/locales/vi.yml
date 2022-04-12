@@ -42,3 +42,10 @@ vi:
     signup: "Đăng Ký"
     name_page: "Trang Đăng Ký"
     text: "Đây sẽ là trang đăng ký cho người dùng mới."
+    sigup: "Đăng Ký"
+    name_page: "Trang Đăng Ký"
+    text: "Đây sẽ là trang đăng ký cho người dùng mới."
+
+  errors:
+    err: "Lỗi"
+    text_1: "Biểu mẩu chứa"
