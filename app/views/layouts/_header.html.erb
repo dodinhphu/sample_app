@@ -9,9 +9,32 @@
         <li class="nav-item">
           <%= link_to t("layouts.header.help"), help_path, {class: "nav-link"} %>
         </li>
-        <li class="nav-item">
-          <%= link_to t("layouts.header.login"), "#", {class: "nav-link"}%>
-        </li>
+        <% if logged_in? %>
+          <li class="nav-item">
+            <%= link_to t("users.users"), "#", {class: "nav-link"} %>
+          </li>
+          <li class="nav-item dropdown">
+            <%= link_to t("users.account"), "#", {class: "nav-link dropdown-toggle", id: "navbarDropdown", role: "button", "data-bs-toggle": "dropdown", "aria-expanded": "false"} %>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <%= link_to t("users.profile"), current_user, {class: "dropdown-item"} %>
+              </li>
+              <li>
+                <%= link_to t("users.setting"), "#", {class: "dropdown-item"} %>
+              </li>
+              <li class="divider">
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <%= link_to t("users.logout"), logout_path, {class: "dropdown-item", method: :delete} %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to t("layouts.header.login"), login_path, {class: "nav-link"} %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>

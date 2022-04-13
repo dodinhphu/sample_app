@@ -7,6 +7,7 @@ en:
       help: "Help"
       login: "Login"
       sampleapp: "Sample App"
+
     footer:
       contact: "Contact"
       about: "About"
@@ -48,3 +49,23 @@ en:
   errors:
     err: "error"
     text_1: "The form contains"
+    sigup: "Sign Up"
+    name_page: "Sign Up Page"
+    text: "This will be a signup page for new users."
+
+  errors:
+    err: "error"
+    text_1: "The form contains"
+
+  login:
+    log_in: "Login"
+    invalid: :"Invalid Email address or Password"
+    tb_successfully: "Logged in successfully"
+
+  users:
+    account: "My Accout"
+    users: "Users"
+    profile: "Profile"
+    setting: "Settings"
+    logout: "Log Out"
+    tb_successfully: "Welcome to the Sample App!"
