@@ -1,0 +1,6 @@
+host: "localhost:3000"
+host_email: "admin@sun-asterisk.com"
+mail_user_name: "dodinhphu316@gmail.com"
+mail_user_password: "phu349167258"
+mail_address: "smtp.gmail.com"
+mail_port: "587"

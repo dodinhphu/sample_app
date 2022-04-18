@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
   include Pagy::Backend
   before_action :set_locale
-  before_action :logged_in_user, only:[:index, :edit, :update]
 
   private
   def set_locale
