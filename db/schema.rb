@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_04_19_162017) do
   create_table "active_storage_attachments", charset: "utf8mb3", force: :cascade do |t|
     t.string "name", null: false
@@ -49,13 +48,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_19_162017) do
     t.index ["user_id"], name: "index_microposts_on_user_id"
   end
 
-=======
-<<<<<<< HEAD
-ActiveRecord::Schema[7.0].define(version: 2022_04_05_113920) do
-=======
-ActiveRecord::Schema[7.0].define(version: 2022_04_14_080935) do
->>>>>>> chapter-10
->>>>>>> chapter-10
   create_table "users", charset: "utf8mb3", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -63,22 +55,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_14_080935) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.string "remember_digest"
-<<<<<<< HEAD
+
     t.boolean "admin", default: false
     t.string "activation_digest"
     t.boolean "activated"
     t.datetime "activated_at"
     t.string "reset_digest"
     t.datetime "reset_sent_at"
-=======
-<<<<<<< HEAD
-    t.string "activation_digest"
-    t.boolean "activated"
-    t.datetime "activated_at"
-=======
-    t.boolean "admin", default: false
->>>>>>> chapter-10
->>>>>>> chapter-10
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

@@ -60,6 +60,7 @@ class User < ApplicationRecord
     UserMailer.account_activation(self).deliver_now
   end
 
+<<<<<<< HEAD
   def create_reset_digest
     self.reset_token = User.new_token
     update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
@@ -77,18 +78,26 @@ class User < ApplicationRecord
     microposts
   end
 
+=======
+>>>>>>> chapter-11
   private
 
   def downcase_email
     self.email.downcase!
   end
+<<<<<<< HEAD
 
+=======
+>>>>>>> chapter-11
   def create_activation_digest
     self.activation_token = User.new_token
     self.activation_digest = User.digest activation_token
   end
 
+<<<<<<< HEAD
   def check_password
     errors.add :password, I18n.t("forgot_password.alert_not_empty") if self.password.blank?
   end
+=======
+>>>>>>> chapter-11
 end
