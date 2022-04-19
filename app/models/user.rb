@@ -61,6 +61,9 @@ class User < ApplicationRecord
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chapter-12
   def create_reset_digest
     self.reset_token = User.new_token
     update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
@@ -71,6 +74,7 @@ class User < ApplicationRecord
   end
 
   def password_reset_expired?
+<<<<<<< HEAD
     reset_sent_at < Settings.time_token.two_h.hours.ago
   end
 
@@ -80,6 +84,11 @@ class User < ApplicationRecord
 
 =======
 >>>>>>> chapter-11
+=======
+    reset_sent_at < 2.hours.ago
+  end
+
+>>>>>>> chapter-12
   private
 
   def downcase_email
