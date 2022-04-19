@@ -8,6 +8,8 @@ class User < ApplicationRecord
   validate :check_password, on: :update
   has_many :microposts, dependent: :destroy
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true,
                    length: {maximum: Settings.type_validate.max_length_name}
 
@@ -88,7 +90,14 @@ class User < ApplicationRecord
     reset_sent_at < 2.hours.ago
   end
 
+<<<<<<< HEAD
 >>>>>>> chapter-12
+=======
+  def feed
+    microposts
+  end
+
+>>>>>>> chapter-13
   private
 
   def downcase_email

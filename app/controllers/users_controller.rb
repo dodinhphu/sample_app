@@ -9,7 +9,17 @@ class UsersController < ApplicationController
   end
 
   def index
+<<<<<<< HEAD
     @pagy, @users = pagy User .ordered_by_name
+=======
+   @pagy, @users = pagy(User.all)
+  end
+
+  def new; end
+  def show
+    @pagy, @microposts = pagy @user.microposts
+    redirect_to root_path if check? @user
+>>>>>>> chapter-13
   end
 
   def new
