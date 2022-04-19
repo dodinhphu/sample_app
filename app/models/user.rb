@@ -68,7 +68,11 @@ class User < ApplicationRecord
   end
 
   def password_reset_expired?
+<<<<<<< HEAD
     reset_sent_at < Settings.time_token.two_h.hours.ago
+=======
+    reset_sent_at < 2.hours.ago
+>>>>>>> chapter-12
   end
 
   private
