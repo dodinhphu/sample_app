@@ -62,12 +62,32 @@ en:
     tb_successfully: "Logged in successfully"
 
   users:
+    destroy:
+      delete_success: "User deleted"
+      delete_fail: "Delete fail!"
+    create:
+      tb_successfully: "Welcome to the Sample App!"
+      create_fail: "Create User Failed"
     account: "My Accout"
     users: "Users"
     profile: "Profile"
     setting: "Settings"
     logout: "Log Out"
-    tb_successfully: "Welcome to the Sample App!"
+    title_update: "Edit user"
+    btn_create: "Create my account"
+    btn_update: "Save changes"
+    tb_update_successfully: "Update Successfully"
+    alert: "Please log in."
+    allUser: "All users"
+    text_3: "Update your profile"
+    delete: "Delete"
+    text_4: "You sure?"
+    notuser: "User not found"
+    update_fail: "User Update Failed"
+
+
+  edit:
+    btn_edit: "change"
 
   sessions:
     text_1: "Remember me on this computer"
