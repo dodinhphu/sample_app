@@ -6,16 +6,15 @@
         <section class="user_info">
           <%= render "shared/user_info" %>
         </section>
+        <section class="stats">
+          <%= render "shared/stats" %>
+        </section>
         <section class="micropost_form">
           <%= render "shared/micropost_form" %>
         </section>
       </aside>
       <div class="col-md-8">
-<<<<<<< HEAD
         <h3><%= t "micropost_feed" %></h3>
-=======
-        <h3>Micropost Feed</h3>
->>>>>>> chapter-13
         <%= render "shared/feed" %>
       </div>
     </div>
@@ -24,19 +23,11 @@
   <div class="center jumbotron mt-5 mb-5">
     <h1><%= t "home_page.chao" %></h1>
     <h2>
-<<<<<<< HEAD
       <%= t "home_page.this_homepage" %>
       <%= link_to t("home_page.course_name"), Settings.link.rails %>
       <%= t "home_page.sampleapp" %>
     </h2>
       <%= link_to t("home_page.sign_up_now"), signup_path, class: "btn btn-lg btn-primary" %>
-=======
-      <%= t "home_page.text_1" %>
-      <%= link_to t("home_page.course_name"), Settings.link.rails %>
-      <%= t "home_page.text_2" %>
-    </h2>
-      <%= link_to t("home_page.text_3"), signup_path, class: "btn btn-lg btn-primary" %>
->>>>>>> chapter-13
   </div>
   <%= link_to image_tag("rails.png", alt: "Rails logo", width: "200px"), Settings.link.rails %>
 <% end %>

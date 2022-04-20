@@ -10,6 +10,12 @@ class User < ApplicationRecord
 
   has_many :microposts, dependent: :destroy
 
+  has_many :active_relationships, class_name: Relationship.name, foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name, foreign_key: :followed_id, dependent: :destroy
+
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
+
   validates :name, presence: true,
                    length: {maximum: Settings.type_validate.max_length_name}
 
@@ -62,10 +68,6 @@ class User < ApplicationRecord
     UserMailer.account_activation(self).deliver_now
   end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> chapter-12
   def create_reset_digest
     self.reset_token = User.new_token
     update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
@@ -76,7 +78,6 @@ class User < ApplicationRecord
   end
 
   def password_reset_expired?
-<<<<<<< HEAD
     reset_sent_at < Settings.time_token.two_h.hours.ago
   end
 
@@ -84,38 +85,32 @@ class User < ApplicationRecord
     microposts
   end
 
-=======
->>>>>>> chapter-11
-=======
-    reset_sent_at < 2.hours.ago
-  end
-
-<<<<<<< HEAD
->>>>>>> chapter-12
-=======
   def feed
-    microposts
+    Micropost.where user_id: (following_ids << id)
   end
 
->>>>>>> chapter-13
+  def follow other_user #Follows a user.
+    following << other_user
+  end
+  def unfollow other_user #Unfollows a user.
+    following.delete other_user
+  end
+  def following? other_user #Returns if the current user is following the other_user or not
+    following.include? other_user
+  end
+
   private
 
   def downcase_email
     self.email.downcase!
   end
-<<<<<<< HEAD
 
-=======
->>>>>>> chapter-11
   def create_activation_digest
     self.activation_token = User.new_token
     self.activation_digest = User.digest activation_token
   end
 
-<<<<<<< HEAD
   def check_password
     errors.add :password, I18n.t("forgot_password.alert_not_empty") if self.password.blank?
   end
-=======
->>>>>>> chapter-11
 end

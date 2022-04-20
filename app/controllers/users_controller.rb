@@ -9,17 +9,7 @@ class UsersController < ApplicationController
   end
 
   def index
-<<<<<<< HEAD
     @pagy, @users = pagy User .ordered_by_name
-=======
-   @pagy, @users = pagy(User.all)
-  end
-
-  def new; end
-  def show
-    @pagy, @microposts = pagy @user.microposts
-    redirect_to root_path if check? @user
->>>>>>> chapter-13
   end
 
   def new
@@ -57,6 +47,20 @@ class UsersController < ApplicationController
       flash[:danger] = t ".delete_fail"
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = t ".title"
+    @user = User.find_by(id: params[:id])
+    @users = @user.following.paginate(page: params[:page])
+    render "show_follow"
+  end
+
+  def followers
+    @title = t ".title"
+    @user = User.find_by(id: params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render "show_follow"
   end
 
   private
