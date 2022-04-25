@@ -1,0 +1,3 @@
+<%= t "sendMail.chao", name: @user.name %>
+<%= t "sendMail.text1" %>
+<%= edit_account_activation_url(id: @user.activation_token, email: @user.email) %>

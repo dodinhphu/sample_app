@@ -1,0 +1,6 @@
+<h1><%= t "sendMail.title" %></h1>
+<p><%= t "sendMail.chao", name: @user.name %>,</p>
+<p>
+  <%= t "sendMail.text1" %>
+</p>
+<%= link_to t("sendMail.link"), edit_account_activation_url(id: @user.activation_token, email: @user.email) %>
