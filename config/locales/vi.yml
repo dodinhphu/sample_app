@@ -100,7 +100,10 @@ vi:
   sessions:
     create:
       check_mail: "Hãy Kiểm Tra Mail Và Kích Hoạt Tài Khoản Của Bạn"
-    text_1: "Nhớ thông tin đăng nhập của tôi trên máy tính này"
+    text_save_login: "Nhớ thông tin đăng nhập của tôi trên máy tính này"
+    password: "Mật Khẩu"
+    new_user: "Người Dùng Mới?"
+    sign_up_now: "Đăng Ký Ngay!"
 
   sendMail:
     chao: "Chào, {name}"
@@ -110,3 +113,21 @@ vi:
     alert2: "Liên kết kích hoạt không hợp lệ"
     title: "Sample App"
     link: "Kích Hoạt"
+
+  forgot_password:
+    title: "Quên Mật Khẩu"
+    text_huong_dan: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+    text_lk_het_hang: "Liên kết này sẽ hết hạn sau hai giờ."
+    text_tb_mk_nhu_cu: " Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ."
+    btn_forgotPassword: "Cập nhật mật khẩu"
+    alert_tc: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+    alert_tb: "Không tìm thấy địa chỉ email"
+    alert_not_empty: "Không thể để trống"
+    alert_reset_password: "Mật khẩu đã được đặt lại."
+    alert_expired_token: "Đặt lại mật khẩu đã hết hạn."
+    submit: "Gửi"
+    reset: "Đặt Lại Mật Khẩu"
+    (title): "(Quên Mật Khẩu)"
+    password: "Mật Khẩu"
+    confirmation: "Xác Nhận Mật Khẩu"
+    user_not_found: "Không Tìm Thấy Người Dùng"
