@@ -6,6 +6,8 @@ class User < ApplicationRecord
   before_create :create_activation_digest
 
   validate :check_password, on: :update
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true,
                    length: {maximum: Settings.type_validate.max_length_name}
 
@@ -69,6 +71,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.time_token.two_h.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private

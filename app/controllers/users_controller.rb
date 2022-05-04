@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
 
   def show
+    @pagy, @microposts = pagy @user.microposts
     redirect_to root_path if check? @user
   end
 

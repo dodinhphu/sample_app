@@ -12,6 +12,7 @@ class AccountActivationsController < ApplicationController
       redirect_to root_url
     end
   end
+
   private
   def check_user
     @user = User.find_by email: params[:email]
