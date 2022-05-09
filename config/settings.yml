@@ -14,6 +14,7 @@ type_validate:
 size_img:
   size_80: 80
   size_50: 50
+  size_30: 30
 
 time_token:
   two_h: 2
@@ -21,4 +22,4 @@ time_token:
 size_in_megabytes: 5
 resize_to_limit: [500, 500]
 max_length_content: 140
-img_type: [image/jpeg image/gif image/png]
+img_type: ["image/jpeg", "image/gif", "image/png"]

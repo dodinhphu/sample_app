@@ -56,10 +56,6 @@ vi:
     name_page: "Trang Đăng Ký"
     text: "Đây sẽ là trang đăng ký cho người dùng mới."
 
-  errors:
-    err: "Lỗi"
-    text_1: "Biểu mẩu chứa"
-
   login:
     log_in: "Đăng Nhập"
     invalid: "Email hoặc Mật Khẩu không chính xác"
@@ -90,7 +86,8 @@ vi:
     notuser: "Không Tìm Thấy Người Dùng"
     update_fail: "Cập Nhật Người Dùng Không Thành Công"
     create_fail: "Tạo Người Dùng Không Thành Công"
-
+    followers:
+      title: "Danh Sách Người Theo dõi"
   edit:
     btn_edit: "Thay Đỗi"
     text_5: "Xóa Thành Công Người Dùng"
@@ -153,3 +150,8 @@ vi:
   micropost: "micropost"
   micropost_feed: "Micropost Feed"
   delete: "xóa"
+  following: "Theo Dõi"
+  followers: "Người Theo Dõi"
+  view_my_profile: "xem hồ sơ của tôi"
+  follow: "Theo Dõi"
+  Unfollow: "Bõ Theo Dõi"
